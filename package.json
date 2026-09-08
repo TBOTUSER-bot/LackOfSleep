@@ -1,0 +1,12 @@
+{
+  "name": "sleep-deprivation-info",
+  "version": "1.0.0",
+  "description": "Informative portal on sleep deprivation",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
