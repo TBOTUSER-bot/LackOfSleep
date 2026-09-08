@@ -3,47 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>7 Hidden Symptoms of Severe Sleep Deprivation</title>
+    <title>7 Hidden Symptoms of Severe Sleep Deprivation | Lack of Sleep Guide</title>
+    <meta name="description" content="Discover seven serious, hidden symptoms of chronic sleep deprivation that affect your brain, mood, and immune system. Evidence-based guide.">
+    <meta name="keywords" content="sleep deprivation symptoms, brain fog, chronic sleep loss effects, microsleep, high cortisol, ghrelin leptin balance">
+
+    <!-- Google Site Verification - Required for Search Console -->
+    <meta name="google-site-verification" content="googleb06d831dee4e602a" />
+
+    <!-- Google AdSense Script Placeholder -->
+    <!-- Replace 'ca-pub-XXXXXXXXXXXXXXXX' with your actual Google AdSense Publisher ID -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
+
     <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-color: #e2e8f0;
+            --accent-color: #38bdf8;
+            --muted-text: #94a3b8;
+            --border-color: #334155;
+            --alert-bg: #1e1b4b;
+            --alert-border: #6366f1;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #f9fbfd;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
         }
+
         header {
+            background-color: var(--card-bg);
+            padding: 3rem 1.5rem;
             text-align: center;
-            padding: 40px 0;
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-            color: white;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        header h1 {
+            color: var(--accent-color);
+            margin: 0 0 0.75rem 0;
+            font-size: 2.25rem;
+        }
+
+        header p {
+            color: var(--muted-text);
+            margin: 0;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 2rem auto;
+            padding: 0 1.25rem;
+        }
+
+        .ad-banner {
+            background-color: var(--card-bg);
+            border: 1px dashed var(--border-color);
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 2rem 0;
             border-radius: 8px;
-            margin-bottom: 30px;
-        }
-        h1 { margin: 0; font-size: 2.2rem; }
-        h2 { color: #1e3c72; margin-top: 30px; border-bottom: 2px solid #eef2f7; padding-bottom: 5px; }
-        .ad-placeholder {
-            background-color: #f0f2f5;
-            border: 2px dashed #ccc;
+            color: var(--muted-text);
+            font-size: 0.875rem;
             text-align: center;
-            padding: 20px;
-            margin: 20px 0;
-            color: #666;
-            font-style: italic;
         }
-        ul { padding-left: 20px; }
-        li { margin-bottom: 10px; }
+
+        .content-card {
+            background-color: var(--card-bg);
+            border-radius: 12px;
+            padding: 2.25rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        h2 {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.6rem;
+        }
+
+        h3 {
+            color: #f1f5f9;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        .symptom-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .symptom-item {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 1.25rem;
+        }
+
+        .symptom-item h3 {
+            margin: 0 0 0.75rem 0;
+            color: var(--accent-color);
+            font-size: 1.4rem;
+        }
+
+        .callout-box {
+            background-color: var(--alert-bg);
+            border-left: 4px solid var(--alert-border);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout-box h4 {
+            margin: 0 0 0.5rem 0;
+            color: #a5b4fc;
+        }
+
         footer {
             text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid #ddd;
-            font-size: 0.9rem;
+            padding: 2.5rem 1rem;
+            color: var(--muted-text);
+            font-size: 0.875rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
         }
-        a { color: #2a5298; text-decoration: none; font-weight: bold; }
-        a:hover { text-decoration: underline; }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        @media (max-width: 600px) {
+            .content-card {
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -53,50 +172,97 @@
         <p>An Evidence-Based Guide to How Lack of Sleep Affects Your Body and Mind</p>
     </header>
 
-    <!-- ADSENSE PLACEHOLDER (TOP) -->
-    <div class="ad-placeholder">
-        [Google AdSense Ad - Top Display banner will appear here later]
-    </div>
+    <div class="container">
 
-    <main>
-        <p>Most people assume that the only consequence of a <strong>lack of sleep</strong> is feeling tired or drinking an extra cup of coffee the next morning. However, chronic sleep deprivation is a serious physiological strain that alters your brain chemistry, immune responses, and metabolic health.</p>
-        
-        <p>If you are struggling to get 7 to 9 hours of quality rest per night, your body will begin sending warning signals. Here are seven hidden symptoms of sleep deprivation you should never ignore.</p>
-
-        <h2>1. Severe Brain Fog and Cognitive Sluggishness</h2>
-        <p>Your brain relies on deep sleep to clear out metabolic waste accumulated during the day. Without enough rest, your neurons cannot communicate efficiently. This causes severe brain fog, difficulty concentrating, slow reaction times, and trouble processing complex ideas.</p>
-
-        <h2>2. Rapid Mood Swings and Irritability</h2>
-        <p>Have you noticed you are angrier or more anxious than usual? Sleep deprivation directly affects the amygdala, the brain's emotional control center. Without sleep, the brain struggles to regulate emotions, leading to sudden mood swings, low stress tolerance, and a higher risk of anxiety or depression.</p>
-
-        <!-- ADSENSE PLACEHOLDER (MIDDLE) -->
-        <div class="ad-placeholder">
-            [Google AdSense Ad - In-Article native banner will appear here later]
+        <!-- Top Ad Banner Placement -->
+        <div class="ad-banner">
+            <ins class="adsbygoogle"
+                 style="display:block; width: 100%;"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1234567890"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
 
-        <h2>3. Intense Sugar and Carb Cravings</h2>
-        <p>A lack of sleep throws your hunger hormones completely out of balance. It lowers your levels of <strong>leptin</strong> (the hormone that tells you you're full) and spikes your levels of <strong>ghrelin</strong> (the hormone that triggers hunger). This biochemical shift makes your brain desperately crave high-calorie sugars and carbohydrates for fast energy.</p>
+        <!-- Introduction -->
+        <article class="content-card">
+            <p>Most people assume that the only consequence of a <strong>lack of sleep</strong> is feeling tired or drinking an extra cup of coffee the next morning. However, chronic sleep deprivation is a serious physiological strain that alters your brain chemistry, immune responses, and metabolic health.</p>
+            
+            <p>If you are struggling to get 7 to 9 hours of quality rest per night, your body will begin sending warning signals. Here are seven hidden symptoms of sleep deprivation you should never ignore.</p>
+        </article>
 
-        <h2>4. Micro-Sleep Episodes</h2>
-        <p>Micro-sleeps are brief, uncontrollable instances of sleep lasting anywhere from a fraction of a second to a full 30 seconds. Your eyes might stay open, but your brain is completely offline. This is incredibly dangerous, especially if you are driving a car or operating machinery.</p>
+        <!-- Symptoms List -->
+        <article class="content-card">
+            <h2>The 7 Warning Signs</h2>
+            
+            <ul class="symptom-list">
+                
+                <li class="symptom-item">
+                    <h3>1. Severe Brain Fog and Cognitive Sluggishness</h3>
+                    <p>Your brain relies on deep sleep to clear out metabolic waste accumulated during the day. Without enough rest, your neurons cannot communicate efficiently. This causes severe brain fog, difficulty concentrating, slow reaction times, and trouble processing complex ideas.</p>
+                </li>
 
-        <h2>5. Weakened Immune Defense</h2>
-        <p>While you sleep, your immune system releases proteins called cytokines, which help fight off infections and inflammation. When you cut your sleep short, your body produces fewer cytokines, leaving you highly vulnerable to catching common colds, the flu, and other viruses.</p>
+                <li class="symptom-item">
+                    <h3>2. Rapid Mood Swings and Irritability</h3>
+                    <p>Have you noticed you are angrier or more anxious than usual? Sleep deprivation directly affects the amygdala, the brain's emotional control center. Without sleep, the brain struggles to regulate emotions, leading to sudden mood swings, low stress tolerance, and a higher risk of anxiety or depression.</p>
+                </li>
 
-        <h2>6. Memory Problems and Forgetfulness</h2>
-        <p>Sleep is when your brain engages in <em>memory consolidation</em>—the process of turning short-term experiences into long-term memories. If you don't sleep, your brain cannot organize this data properly, causing you to constantly misplace items or forget important details.</p>
+                <!-- Middle Ad Banner Placement -->
+                <div class="ad-banner">
+                    <ins class="adsbygoogle"
+                         style="display:block; width: 100%;"
+                         data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                         data-ad-slot="0987654321"
+                         data-ad-format="auto"
+                         data-full-width-responsive="true"></ins>
+                    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                </div>
 
-        <h2>7. Dull Skin and Dark Under-Eye Circles</h2>
-        <p>Chronic sleep shortage releases the stress hormone <strong>cortisol</strong>. Excessive cortisol breaks down collagen, the crucial protein that keeps your skin smooth and elastic. This results in premature wrinkles, pale skin, and inflamed blood vessels beneath the eyes.</p>
-    </main>
+                <li class="symptom-item">
+                    <h3>3. Intense Sugar and Carb Cravings</h3>
+                    <p>A lack of sleep throws your hunger hormones completely out of balance. It lowers your levels of <strong>leptin</strong> (the hormone that tells you you're full) and spikes your levels of <strong>ghrelin</strong> (the hormone that triggers hunger). This biochemical shift makes your brain desperately crave high-calorie sugars and carbohydrates for fast energy.</p>
+                </li>
 
-    <!-- ADSENSE PLACEHOLDER (BOTTOM) -->
-    <div class="ad-placeholder">
-        [Google AdSense Ad - Bottom Match Content banner will appear here later]
+                <li class="symptom-item">
+                    <h3>4. Micro-Sleep Episodes</h3>
+                    <p>Micro-sleeps are brief, uncontrollable instances of sleep lasting anywhere from a fraction of a second to a full 30 seconds. Your eyes might stay open, but your brain is completely offline. This is incredibly dangerous, especially if you are driving a car or operating machinery.</p>
+                </li>
+
+                <li class="symptom-item">
+                    <h3>5. Weakened Immune Defense</h3>
+                    <p>While you sleep, your immune system releases proteins called cytokines, which help fight off infections and inflammation. When you cut your sleep short, your body produces fewer cytokines, leaving you highly vulnerable to catching common colds, the flu, and other viruses.</p>
+                </li>
+
+                <li class="symptom-item">
+                    <h3>6. Memory Problems and Forgetfulness</h3>
+                    <p>Sleep is when your brain engages in <em>memory consolidation</em>—the process of turning short-term experiences into long-term memories. If you don't sleep, your brain cannot organize this data properly, causing you to constantly misplace items or forget important details.</p>
+                </li>
+
+                <li class="symptom-item">
+                    <h3>7. Dull Skin and Dark Under-Eye Circles</h3>
+                    <p>Chronic sleep shortage releases the stress hormone <strong>cortisol</strong>. Excessive cortisol breaks down collagen, the crucial protein that keeps your skin smooth and elastic. This results in premature wrinkles, pale skin, and inflamed blood vessels beneath the eyes.</p>
+                </li>
+
+            </ul>
+        </article>
+
+        <!-- Bottom Ad Banner Placement -->
+        <div class="ad-banner">
+            <ins class="adsbygoogle"
+                 style="display:block; width: 100%;"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1122334455"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
     </div>
 
     <footer>
-        <p>© 2026 Lack Of Sleep Guide. All rights reserved.</p>
+        <p>&copy; 2026 Lack Of Sleep Guide. All rights reserved.</p>
+        <p><strong>Medical Disclaimer:</strong> The content provided on this site is for educational and informational purposes only and is not intended as medical advice. Always consult a qualified healthcare professional regarding medical conditions or sleep disorders.</p>
         <p><a href="/">← Go Back to Homepage</a></p>
     </footer>
 
