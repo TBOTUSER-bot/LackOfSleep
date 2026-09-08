@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Understanding Sleep Deprivation | Causes, Effects & Solutions</title>
-    <meta name="description" content="Learn about the health risks of sleep deprivation, common causes, and proven strategies to improve sleep quality.">
-    
+    <title>Understanding Sleep Deprivation | Causes, Health Effects & Solutions</title>
+    <meta name="description" content="A comprehensive guide to understanding sleep deprivation: physiological effects, sleep stages, long-term health risks, causes, and evidence-based solutions.">
+    <meta name="keywords" content="sleep deprivation, sleep hygiene, health effects of sleep loss, insomnia causes, REM sleep, circadian rhythm">
+
     <!-- Google AdSense Script Placeholder -->
-    <!-- Replace 'ca-pub-XXXXXXXXXXXXXXXX' with your Google AdSense Publisher ID -->
+    <!-- Replace 'ca-pub-XXXXXXXXXXXXXXXX' with your actual Google AdSense Publisher ID -->
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossorigin="anonymous"></script>
 
     <style>
@@ -16,77 +17,172 @@
             --card-bg: #1e293b;
             --text-color: #e2e8f0;
             --accent-color: #38bdf8;
+            --accent-hover: #0284c7;
             --muted-text: #94a3b8;
+            --border-color: #334155;
+            --alert-bg: #1e1b4b;
+            --alert-border: #6366f1;
+        }
+
+        * {
+            box-sizing: border-box;
         }
 
         body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
             background-color: var(--bg-color);
             color: var(--text-color);
             margin: 0;
             padding: 0;
-            line-height: 1.6;
+            line-height: 1.7;
         }
 
         header {
             background-color: var(--card-bg);
-            padding: 2rem 1rem;
+            padding: 3rem 1.5rem;
             text-align: center;
-            border-bottom: 1px solid #334155;
+            border-bottom: 1px solid var(--border-color);
         }
 
         header h1 {
             color: var(--accent-color);
-            margin: 0 0 0.5rem 0;
+            margin: 0 0 0.75rem 0;
+            font-size: 2.25rem;
+        }
+
+        header p {
+            color: var(--muted-text);
+            margin: 0;
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto;
         }
 
         .container {
-            max-width: 900px;
+            max-width: 960px;
             margin: 2rem auto;
-            padding: 0 1rem;
+            padding: 0 1.25rem;
         }
 
         .ad-banner {
-            background-color: #334155;
-            min-height: 90px;
+            background-color: var(--card-bg);
+            border: 1px dashed var(--border-color);
+            min-height: 100px;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 1.5rem 0;
+            margin: 2rem 0;
             border-radius: 8px;
             color: var(--muted-text);
             font-size: 0.875rem;
+            text-align: center;
         }
 
         .content-card {
             background-color: var(--card-bg);
-            border-radius: 8px;
-            padding: 2rem;
+            border-radius: 12px;
+            padding: 2.25rem;
             margin-bottom: 2rem;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
         h2 {
             color: var(--accent-color);
-            border-bottom: 2px solid #334155;
+            border-bottom: 2px solid var(--border-color);
             padding-bottom: 0.5rem;
+            margin-top: 0;
+            font-size: 1.6rem;
         }
 
-        ul {
-            padding-left: 1.2rem;
+        h3 {
+            color: #f1f5f9;
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
         }
 
         li {
-            margin-bottom: 0.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.25rem;
+            margin-top: 1.25rem;
+        }
+
+        .grid-item {
+            background: rgba(15, 23, 42, 0.6);
+            padding: 1.25rem;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .grid-item h4 {
+            margin: 0 0 0.5rem 0;
+            color: var(--accent-color);
+        }
+
+        .callout-box {
+            background-color: var(--alert-bg);
+            border-left: 4px solid var(--alert-border);
+            padding: 1.25rem;
+            margin: 1.5rem 0;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .callout-box h4 {
+            margin: 0 0 0.5rem 0;
+            color: #a5b4fc;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+        }
+
+        th, td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: rgba(15, 23, 42, 0.8);
+            color: var(--accent-color);
         }
 
         footer {
             text-align: center;
-            padding: 2rem;
+            padding: 2.5rem 1rem;
             color: var(--muted-text);
             font-size: 0.875rem;
-            border-top: 1px solid #334155;
-            margin-top: 3rem;
+            border-top: 1px solid var(--border-color);
+            margin-top: 4rem;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            .content-card {
+                padding: 1.5rem;
+            }
+            header h1 {
+                font-size: 1.75rem;
+            }
         }
     </style>
 </head>
@@ -94,15 +190,15 @@
 
     <header>
         <h1>Understanding Sleep Deprivation</h1>
-        <p>Impact on Health, Symptoms, and Path to Recovery</p>
+        <p>An Evidence-Based Guide to Sleep Science, Physiological Impact, and Recovery Strategies</p>
     </header>
 
     <div class="container">
-        <!-- Top Ad Placement -->
+
+        <!-- Top Ad Banner Placement -->
         <div class="ad-banner">
-            <!-- Google Ad Placement Code -->
             <ins class="adsbygoogle"
-                 style="display:block"
+                 style="display:block; width: 100%;"
                  data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
                  data-ad-slot="1234567890"
                  data-ad-format="auto"
@@ -110,23 +206,75 @@
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
 
+        <!-- Section 1: Overview & Definition -->
         <article class="content-card">
             <h2>What is Sleep Deprivation?</h2>
-            <p>Sleep deprivation occurs when an individual fails to get an adequate amount of sleep necessary for optimal physical and cognitive performance. While occasional sleeplessness causes short-term fatigue, chronic sleep loss can lead to long-term severe health complications.</p>
+            <p>Sleep deprivation occurs when an individual consistently gets less sleep than their body needs for full cognitive and physiological restoration. While occasional short sleep may cause temporary fatigue, <strong>chronic sleep deprivation</strong>—lasting weeks, months, or years—severely impairs bodily systems.</p>
+
+            <h3>How Much Sleep Do We Need?</h3>
+            <p>Sleep requirements vary across age groups according to health guidelines:</p>
             
-            <h2>Key Symptoms & Effects</h2>
-            <ul>
-                <li><strong>Cognitive Function:</strong> Impaired memory, reduced concentration, and delayed reaction times.</li>
-                <li><strong>Mood Changes:</strong> Increased irritability, mood swings, and heightened risk of anxiety or depression.</li>
-                <li><strong>Physical Health:</strong> Weakened immune system, elevated cardiovascular risk, and metabolic changes.</li>
-            </ul>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Age Group</th>
+                        <th>Recommended Daily Sleep</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Infants (4–12 months)</td>
+                        <td>12 – 16 hours (including naps)</td>
+                    </tr>
+                    <tr>
+                        <td>Children (1–5 years)</td>
+                        <td>10 – 14 hours (including naps)</td>
+                    </tr>
+                    <tr>
+                        <td>Teenagers (13–17 years)</td>
+                        <td>8 – 10 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Adults (18–64 years)</td>
+                        <td>7 – 9 hours</td>
+                    </tr>
+                    <tr>
+                        <td>Older Adults (65+ years)</td>
+                        <td>7 – 8 hours</td>
+                    </tr>
+                </tbody>
+            </table>
         </article>
 
-        <!-- In-Content Ad Placement -->
+        <!-- Section 2: Stages of Sleep -->
+        <article class="content-card">
+            <h2>The Science of Sleep Architecture</h2>
+            <p>Sleep is not a uniform state. Throughout the night, the brain moves through two primary types of sleep across 90-minute cycles: <strong>NREM (Non-Rapid Eye Movement)</strong> and <strong>REM (Rapid Eye Movement)</strong>.</p>
+
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Stage N1 (Light Sleep)</h4>
+                    <p>The transition phase between wakefulness and sleep. Muscle activity slows down, and light twitching may occur.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Stage N2 (Core Sleep)</h4>
+                    <p>Heart rate and body temperature drop. Brain waves show sleep spindles, preparing the body for deep rest.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Stage N3 (Deep / Slow-Wave)</h4>
+                    <p>Critical for physical recovery, cellular repair, growth hormone release, and immune system strengthening.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>REM Sleep (Dreaming)</h4>
+                    <p>Essential for brain function, memory consolidation, emotional processing, and creative problem-solving.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Middle Ad Banner Placement -->
         <div class="ad-banner">
-            <!-- Google Ad Placement Code -->
             <ins class="adsbygoogle"
-                 style="display:block"
+                 style="display:block; width: 100%;"
                  data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
                  data-ad-slot="0987654321"
                  data-ad-format="auto"
@@ -134,19 +282,74 @@
             <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
         </div>
 
+        <!-- Section 3: Health Risks -->
         <article class="content-card">
-            <h2>Tips for Improving Sleep Hygiene</h2>
+            <h2>Physiological & Cognitive Effects of Sleep Loss</h2>
+            <p>Chronic sleep debt affects almost every major system in the human body:</p>
+
+            <ul>
+                <li><strong>Brain & Cognitive Decline:</strong> Slows reaction times, reduces concentration, impairs short-term memory, and increases risk-taking behaviors.</li>
+                <li><strong>Cardiovascular Health:</strong> Chronic sleep loss is linked to increased risk of high blood pressure, coronary heart disease, and stroke.</li>
+                <li><strong>Metabolic & Weight Changes:</strong> Disrupts appetite-regulating hormones—increasing <em>ghrelin</em> (hunger hormone) and decreasing <em>leptin</em> (fullness hormone), leading to cravings and potential weight gain.</li>
+                <li><strong>Immune Function:</strong> Inhibits the production of protective cytokines, making you more susceptible to infections and slowing recovery times.</li>
+                <li><strong>Mental Health Impact:</strong> Significantly increases susceptibility to mood disorders, anxiety, depression, and psychological distress.</li>
+            </ul>
+
+            <div class="callout-box">
+                <h4>Did You Know? Microsleep Safety Risk</h4>
+                <p>Sleep deprivation can trigger <strong>microsleeps</strong>—uncontrollable brief episodes of sleep lasting 1 to 15 seconds. Microsleeps while driving or operating machinery are a primary cause of major transportation accidents.</p>
+            </div>
+        </article>
+
+        <!-- Section 4: Common Causes -->
+        <article class="content-card">
+            <h2>Common Causes of Sleep Deprivation</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <h4>Lifestyle Factors</h4>
+                    <p>Shift work schedules, late-night screen exposure (blue light), excessive caffeine or alcohol, and irregular sleep routines.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Medical Conditions</h4>
+                    <p>Sleep apnea, chronic pain, restless legs syndrome (RLS), acid reflux, and endocrine disorders.</p>
+                </div>
+                <div class="grid-item">
+                    <h4>Psychological Stress</h4>
+                    <p>High work stress, generalized anxiety, PTSD, and depression often lead to difficulty falling or staying asleep.</p>
+                </div>
+            </div>
+        </article>
+
+        <!-- Section 5: Solutions & Sleep Hygiene -->
+        <article class="content-card">
+            <h2>Evidence-Based Strategies for Better Sleep</h2>
+            <p>To overcome sleep deprivation, implementing structured **sleep hygiene habits** is essential:</p>
+
             <ol>
-                <li>Maintain a consistent sleep schedule every day, including weekends.</li>
-                <li>Keep the bedroom dark, quiet, and cool (between 60–67°F or 15–19°C).</li>
-                <li>Avoid blue light exposure from smartphones and screens at least 1 hour before bed.</li>
-                <li>Limit caffeine intake in the late afternoon and evening.</li>
+                <li><strong>Set a Fixed Schedule:</strong> Go to bed and wake up at the exact same times every day, even on weekends.</li>
+                <li><strong>Optimize Your Sleep Environment:</strong> Ensure your bedroom is dark, quiet, and cool (ideally 60–67°F or 15–19°C). Use blackout curtains or eye masks.</li>
+                <li><strong>Limit Blue Light Exposure:</strong> Turn off phones, tablets, and computers at least 60 minutes before bed, as blue light suppresses melatonin production.</li>
+                <li><strong>Watch Dietary Habits:</strong> Avoid heavy meals, caffeine, and alcohol close to bedtime.</li>
+                <li><strong>Establish a Wind-Down Routine:</strong> Practice relaxing activities like reading, light stretching, or meditation before turning off the lights.</li>
             </ol>
         </article>
+
+        <!-- Bottom Ad Banner Placement -->
+        <div class="ad-banner">
+            <ins class="adsbygoogle"
+                 style="display:block; width: 100%;"
+                 data-ad-client="ca-pub-XXXXXXXXXXXXXXXX"
+                 data-ad-slot="1122334455"
+                 data-ad-format="auto"
+                 data-full-width-responsive="true"></ins>
+            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+        </div>
+
     </div>
 
     <footer>
-        <p>&copy; 2026 Sleep Health Portal. Medical Information Disclaimer: Content is for educational purposes only.</p>
+        <p>&copy; 2026 Sleep Health Portal. All rights reserved.</p>
+        <p><strong>Medical Disclaimer:</strong> The content provided on this site is for educational and informational purposes only and is not intended as medical advice. Always consult a qualified healthcare professional regarding medical conditions or sleep disorders.</p>
     </footer>
 
 </body>
